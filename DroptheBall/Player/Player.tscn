@@ -4,7 +4,7 @@
 [ext_resource path="res://Player/Needle.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 4.09137
+radius = 4.83097
 height = 39.1925
 
 [node name="Player" type="Node2D"]
@@ -17,7 +17,7 @@ scale = Vector2( 0.163454, 0.160679 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2( -6.35541, 4.36935 )
+position = Vector2( -5.48128, 4.89383 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
