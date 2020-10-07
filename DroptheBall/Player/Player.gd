@@ -1,7 +1,9 @@
 extends KinematicBody2D
 
 ###test
-export (int) var speed = 200
+export (int) var speed = 400
+
+const GRAVITY = 10000
 
 var velocity = Vector2()
 
@@ -15,4 +17,5 @@ func get_input():
 
 func _physics_process(delta):
 	get_input()
+	move_and_collide(Vector2(0, 5))
 	velocity = move_and_slide(velocity)
