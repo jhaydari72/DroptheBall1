@@ -54,7 +54,7 @@ extents = Vector2( 31.2422, 31.3551 )
 
 [sub_resource type="Curve2D" id=5]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 32, 531.793, 0, 0, 0, 0, 635, 529.793 )
+"points": PoolVector2Array( 0, 0, 0, 0, 11.9369, 531.783, 0, 0, 0, 0, 635, 529.793, 0, 0, 0, 0, 31, 531.793 )
 }
 
 [node name="World" type="Node2D"]
@@ -84,6 +84,8 @@ position = Vector2( 126, 231 )
 shape = SubResource( 4 )
 
 [node name="Path2D" type="Path2D" parent="KinematicBody2D"]
+position = Vector2( 2.10265, 0 )
+scale = Vector2( 0.996689, 1 )
 curve = SubResource( 5 )
 script = ExtResource( 6 )
 
