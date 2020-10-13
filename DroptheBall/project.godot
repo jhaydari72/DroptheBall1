@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Dropthe Ball"
+run/main_scene="res://Menu Screen/Menu Set Up .tscn"
 config/icon="res://icon.png"
 
 [importer_defaults]
