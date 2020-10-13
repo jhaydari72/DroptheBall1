@@ -41,7 +41,7 @@ __meta__ = {
 [node name="Label" type="Label" parent="."]
 margin_left = -0.973022
 margin_top = 13.7292
-margin_right = 1023.03
+margin_right = 719.027
 margin_bottom = 119.729
 custom_fonts/font = SubResource( 1 )
 text = "Pop the Balloon"
