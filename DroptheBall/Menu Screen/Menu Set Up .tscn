@@ -42,7 +42,7 @@ __meta__ = {
 }
 
 [node name="Balloon Test 1" type="Sprite" parent="Background Color "]
-position = Vector2( 541.372, 715.491 )
+position = Vector2( 550.372, 756.491 )
 texture = ExtResource( 5 )
 
 [node name="Label" type="Label" parent="."]
@@ -104,7 +104,7 @@ margin_bottom = -69.9999
 custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
-text = "Credit "
+text = "Credits"
 flat = true
 script = ExtResource( 3 )
 __meta__ = {
