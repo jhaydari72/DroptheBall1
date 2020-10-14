@@ -46,12 +46,13 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 } ]
 1/z_index = 0
 
-[sub_resource type="CircleShape2D" id=3]
-
-[sub_resource type="Curve2D" id=4]
+[sub_resource type="Curve2D" id=3]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 30.9418, 531.093, 0, 0, 0, 0, 593.605, 532.041, 0, 0, 0, 0, 31, 531.793 )
 }
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 37.7945
 
 [node name="World" type="Node2D"]
 
@@ -74,25 +75,26 @@ tile_data = PoolIntArray( -2621439, 1, 0, -2621438, 1, 0, -2621437, 1, 0, -26214
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 438.817, -2300 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 100, 1500 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( 126, 231 )
-shape = SubResource( 3 )
-
-[node name="Path2D" type="Path2D" parent="KinematicBody2D"]
-position = Vector2( 663.127, 1548.77 )
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2( 225.885, 3143.09 )
 scale = Vector2( 0.987056, 1 )
-curve = SubResource( 4 )
+curve = SubResource( 3 )
 script = ExtResource( 6 )
 
-[node name="PathFollow2D" type="PathFollow2D" parent="KinematicBody2D/Path2D"]
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
 position = Vector2( 30.9418, 531.093 )
 rotation = -0.0031941
 rotate = false
 
-[node name="Balloon" type="Sprite" parent="KinematicBody2D/Path2D/PathFollow2D"]
+[node name="Balloon" type="Sprite" parent="Path2D/PathFollow2D"]
 position = Vector2( -15.8506, 330.361 )
 scale = Vector2( 0.29554, 0.267136 )
 texture = ExtResource( 5 )
+
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Area2D"]
+position = Vector2( -30.521, 276.239 )
+shape = SubResource( 4 )
+[connection signal="area_entered" from="Path2D/PathFollow2D/Area2D" to="Path2D" method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="Path2D/PathFollow2D/Area2D" to="Player" method="_on_Area2D_area_entered"]

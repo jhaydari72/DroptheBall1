@@ -12,3 +12,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	follow.set_offset(follow.get_offset() + 350 * delta)
+
+
+func _on_Area2D_area_entered(area):
+	set_process(false)
