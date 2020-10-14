@@ -14,5 +14,5 @@ func _process(delta):
 	follow.set_offset(follow.get_offset() + 350 * delta)
 
 
-func _on_Area2D_area_entered(area):
+func _on_Area2D_area_entered(_area):
 	set_process(false)
