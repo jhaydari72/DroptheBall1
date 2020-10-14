@@ -20,3 +20,7 @@ func _physics_process(delta):
 	velocity.y += delta * GRAVITY
 	move_and_collide(Vector2(0, 5))
 	velocity = move_and_slide(velocity)
+
+
+func _on_Area2D_area_entered(area):
+	get_tree().change_scene("res://Levels/Level1.tscn")
