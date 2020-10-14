@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-###Left and right speed
+###Left and right speed###
 export (int) var speed = 400
 
 const GRAVITY = 200.0
