@@ -1,5 +1,8 @@
 extends Button
 
+
+var value
+
 func _ready():
 	pass 
 	
@@ -7,4 +10,5 @@ func _ready():
 	
 
 func _on_Play_Button__pressed():
-	get_tree().change_scene("res://Levels/Level1.tscn")
+	value = get_tree().change_scene("res://Levels/Level1.tscn")
+	return value
