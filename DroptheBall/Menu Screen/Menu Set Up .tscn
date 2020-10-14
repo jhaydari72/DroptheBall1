@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Menu Screen/Mrs Beasley.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Menu Screen/Play Button .gd" type="Script" id=2]
+[ext_resource path="res://Menu Screen/Credit Button .gd" type="Script" id=3]
+[ext_resource path="res://Menu Screen/How to play.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 81
@@ -29,20 +31,20 @@ __meta__ = {
 [node name="Background Color " type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 0.594604
-margin_top = -0.594604
-margin_right = 0.594604
-margin_bottom = -0.594604
+margin_left = -131.0
+margin_top = -83.0
+margin_right = 124.0
+margin_bottom = 105.0
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="."]
-margin_left = -0.973022
-margin_top = 13.7292
+margin_left = -0.973
+margin_top = 100.0
 margin_right = 719.027
-margin_bottom = 119.729
+margin_bottom = 206.0
 custom_fonts/font = SubResource( 1 )
 text = "Pop the Balloon"
 align = 1
@@ -55,8 +57,8 @@ __meta__ = {
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -180.0
-margin_bottom = -120.0
+margin_top = -330.0
+margin_bottom = -270.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
@@ -67,37 +69,42 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="How to play" type="Button" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.971
+margin_top = -230.0
+margin_right = 2.97095
+margin_bottom = -170.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
+text = "How to play"
+flat = true
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Credit Button " type="Button" parent="."]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -512.0
-margin_top = -60.0
-margin_right = 512.0
-custom_fonts/font = SubResource( 3 )
+margin_left = -360.0
+margin_top = -130.0
+margin_right = 360.0
+margin_bottom = -69.9999
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
 text = "Credit "
 flat = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="How to play" type="Button" parent="."]
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 1.189
-margin_top = -120.0
-margin_right = 1.18896
-margin_bottom = -60.0
-custom_fonts/font = SubResource( 4 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
-text = "How to play"
-flat = true
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="pressed" from="Play Button " to="Play Button " method="_on_Play_Button__pressed"]
+[connection signal="pressed" from="How to play" to="How to play" method="_on_How_to_play_pressed"]
+[connection signal="pressed" from="Credit Button " to="Credit Button " method="_on_Credit_Button__pressed"]
