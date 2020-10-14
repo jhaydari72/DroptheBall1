@@ -16,7 +16,24 @@ _global_script_class_icons={
 [application]
 
 config/name="Dropthe Ball"
+<<<<<<< HEAD
+<<<<<<< HEAD
+run/main_scene="res://Player/Player.tscn"
 config/icon="res://icon.png"
+
+=======
+run/main_scene="res://Menu Screen/Menu Set Up .tscn"
+config/icon="res://icon.png"
+
+=======
+run/main_scene="res://Menu Screen/Menu Set Up .tscn"
+config/icon="res://icon.png"
+
+>>>>>>> 5f0912cd1591e5e847fb784e3025874f2b09fa45
+[display]
+
+window/size/width=720
+window/size/height=1080
 
 [importer_defaults]
 
@@ -41,6 +58,7 @@ texture={
 "svg/scale": 1.0
 }
 
+>>>>>>> 5f0912cd1591e5e847fb784e3025874f2b09fa45
 [rendering]
 
 environment/default_environment="res://default_env.tres"
