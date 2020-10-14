@@ -11,10 +11,6 @@ font_data = ExtResource( 2 )
 size = 60
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=2]
-size = 60
-font_data = ExtResource( 2 )
-
 [sub_resource type="DynamicFont" id=4]
 size = 45
 font_data = ExtResource( 2 )
@@ -25,6 +21,10 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 45
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
 font_data = ExtResource( 2 )
 
 [node name="How to Play Screen" type="Control"]
@@ -70,25 +70,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Back" type="Button" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -360.0
-margin_top = -180.0
-margin_right = 360.0
-margin_bottom = -79.9999
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
-text = "Back"
-flat = true
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Keys" type="Label" parent="."]
 margin_left = 3.65345
 margin_top = 325.0
@@ -114,13 +95,32 @@ text = "Select/Enter"
 align = 1
 valign = 1
 
-[node name="Label" type="Label" parent="."]
+[node name="Left Mouse Click" type="Label" parent="."]
 margin_left = 180.109
 margin_top = 575.0
 margin_right = 530.109
 margin_bottom = 616.0
 custom_fonts/font = SubResource( 6 )
 text = "Left Mouse Click"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -360.0
+margin_top = -180.0
+margin_right = 360.0
+margin_bottom = -79.9999
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
+text = "Back"
+flat = true
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
