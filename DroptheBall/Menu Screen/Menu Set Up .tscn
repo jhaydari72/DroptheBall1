@@ -1,10 +1,19 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Menu Screen/Mrs Beasley.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Menu Screen/Play Button .gd" type="Script" id=2]
 [ext_resource path="res://Menu Screen/Credit Button .gd" type="Script" id=3]
 [ext_resource path="res://Menu Screen/How to play.gd" type="Script" id=4]
-[ext_resource path="res://Balloon/Balloon Test 1.png" type="Texture" id=5]
+[ext_resource path="res://Player/needle2.png" type="Texture" id=5]
+[ext_resource path="res://Player/Needle.png" type="Texture" id=6]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "title",
+"speed": 5.0
+} ]
 
 [sub_resource type="DynamicFont" id=1]
 size = 81
@@ -41,17 +50,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Balloon Test 1" type="Sprite" parent="Background Color "]
-position = Vector2( 550.372, 756.491 )
-texture = ExtResource( 5 )
+[node name="Balloon Test 1" type="AnimatedSprite" parent="Background Color "]
+position = Vector2( 470.569, 569.875 )
+frames = SubResource( 5 )
+animation = "title"
+playing = true
 
 [node name="Label" type="Label" parent="."]
-margin_left = -0.973
-margin_top = 100.0
-margin_right = 719.027
-margin_bottom = 206.0
+margin_left = 2.71023
+margin_top = 34.9298
+margin_right = 722.71
+margin_bottom = 181.93
 custom_fonts/font = SubResource( 1 )
-text = "Pop The Balloon"
+text = "Thread
+the Needle"
 align = 1
 valign = 1
 __meta__ = {
