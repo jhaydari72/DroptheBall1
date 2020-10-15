@@ -4,7 +4,7 @@ extends Button
 var value
 
 func _ready():
-	pass 
+	grab_focus() 
 	
 	
 	

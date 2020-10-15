@@ -7,23 +7,23 @@
 size = 81
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 60
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 45
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 45
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=5]
 size = 60
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=5]
 size = 45
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=6]
 size = 60
 font_data = ExtResource( 2 )
 
@@ -61,7 +61,7 @@ margin_left = 188.361
 margin_top = 250.0
 margin_right = 509.361
 margin_bottom = 304.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Movements"
 align = 1
@@ -75,7 +75,7 @@ margin_left = 3.65345
 margin_top = 325.0
 margin_right = 723.654
 margin_bottom = 366.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Left & Right Arrow Keys"
 align = 1
@@ -89,7 +89,7 @@ margin_left = 180.108
 margin_top = 500.0
 margin_right = 533.109
 margin_bottom = 554.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Select/Enter"
 align = 1
@@ -100,7 +100,7 @@ margin_left = 180.109
 margin_top = 575.0
 margin_right = 530.109
 margin_bottom = 616.0
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 5 )
 text = "Left Mouse Click"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -115,7 +115,7 @@ margin_left = -360.0
 margin_top = -180.0
 margin_right = 360.0
 margin_bottom = -79.9999
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
 text = "Back"

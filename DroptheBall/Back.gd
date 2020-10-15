@@ -2,7 +2,7 @@ extends Button
 
 
 func _ready():
-	pass 
+	grab_focus() 
 	
 	
 

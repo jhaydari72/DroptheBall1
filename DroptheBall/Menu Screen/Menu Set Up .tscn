@@ -7,7 +7,7 @@
 [ext_resource path="res://Player/needle2.png" type="Texture" id=5]
 [ext_resource path="res://Player/Needle.png" type="Texture" id=6]
 
-[sub_resource type="SpriteFrames" id=5]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 6 ), ExtResource( 5 ) ],
 "loop": true,
@@ -15,12 +15,8 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="DynamicFont" id=1]
-size = 81
-font_data = ExtResource( 1 )
-
 [sub_resource type="DynamicFont" id=2]
-size = 60
+size = 81
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -28,6 +24,10 @@ size = 60
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
+size = 60
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
 size = 60
 font_data = ExtResource( 1 )
 
@@ -52,7 +52,7 @@ __meta__ = {
 
 [node name="Balloon Test 1" type="AnimatedSprite" parent="Background Color "]
 position = Vector2( 470.569, 569.875 )
-frames = SubResource( 5 )
+frames = SubResource( 1 )
 animation = "title"
 playing = true
 
@@ -61,7 +61,7 @@ margin_left = 2.71023
 margin_top = 34.9298
 margin_right = 722.71
 margin_bottom = 181.93
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Thread
 the Needle"
 align = 1
@@ -76,9 +76,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -330.0
 margin_bottom = -270.0
-custom_fonts/font = SubResource( 2 )
+focus_next = NodePath("../How to play")
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
+action_mode = 0
+button_mask = 0
 text = "Play"
 flat = true
 script = ExtResource( 2 )
@@ -94,9 +97,12 @@ margin_left = 2.971
 margin_top = -230.0
 margin_right = 2.97095
 margin_bottom = -170.0
-custom_fonts/font = SubResource( 3 )
+focus_next = NodePath("../Credit Button ")
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
+action_mode = 0
+button_mask = 0
 text = "How to play"
 flat = true
 script = ExtResource( 4 )
@@ -113,9 +119,12 @@ margin_left = -360.0
 margin_top = -130.0
 margin_right = 360.0
 margin_bottom = -69.9999
-custom_fonts/font = SubResource( 4 )
+focus_next = NodePath("../Play Button ")
+custom_fonts/font = SubResource( 5 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
+action_mode = 0
+button_mask = 0
 text = "Credits"
 flat = true
 script = ExtResource( 3 )
