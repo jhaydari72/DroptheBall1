@@ -5,5 +5,6 @@ func _ready():
 	
 
 
-func _on_yes_pressed():
-	get_tree().change_scene("res://Levels/Level1.tscn")
+
+func _on_Pause_visibility_changed():
+	grab_focus()
