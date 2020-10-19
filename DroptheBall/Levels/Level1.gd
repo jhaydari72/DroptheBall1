@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends Node2D
 
 
 # Declare member variables here. Examples:
@@ -8,7 +8,7 @@ extends KinematicBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$AnimatedSprite.play("idle")
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,5 +16,5 @@ func _ready():
 #	pass
 
 
-func _on_Area2D_area_entered(area):
-	$AnimatedSprite.play("pop")
+func _on_Timer_timeout():
+	get_tree().change_scene("res://Levels/Level2.tscn")

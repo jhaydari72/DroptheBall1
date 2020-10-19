@@ -2,6 +2,7 @@ extends Path2D
 
 var value
 onready var follow = get_node("PathFollow2D")
+onready var time = get_node("Timer")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -15,6 +16,7 @@ func _process(delta):
 
 
 func _on_Area2D_area_entered(_area):
+	time.start()
 	set_process(false)
-	value = get_tree().change_scene("res://Levels/Level2.tscn")
-	return value
+	
+
