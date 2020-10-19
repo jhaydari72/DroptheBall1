@@ -58,10 +58,10 @@ radius = 37.7945
 [node name="World" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -11148.8
-margin_top = -3475.43
-margin_right = -2962.8
-margin_bottom = 6795.57
+margin_left = -3685.06
+margin_top = -3828.05
+margin_right = 4500.94
+margin_bottom = 6442.95
 rect_pivot_offset = Vector2( 3659.05, 6769.56 )
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
