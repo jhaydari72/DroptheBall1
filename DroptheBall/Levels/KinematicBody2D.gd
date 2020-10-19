@@ -17,6 +17,6 @@ func _ready():
 
 
 func _on_Area2D_area_entered(area):
-	var MusicNode = $AudioStreamPlayer2D2
+	var MusicNode = $AudioStreamPlayer2D
 	MusicNode.play()
 	$AnimatedSprite.play("pop")
