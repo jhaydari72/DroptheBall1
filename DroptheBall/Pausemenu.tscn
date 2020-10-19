@@ -1,0 +1,85 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Levels/yes.gd" type="Script" id=1]
+[ext_resource path="res://Levels/Pause.gd" type="Script" id=2]
+[ext_resource path="res://Menu Screen/Mrs Beasley.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 200
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 100
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 100
+font_data = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+layer = 128
+
+[node name="Pause" type="Control" parent="."]
+pause_mode = 2
+visible = false
+margin_right = 720.0
+margin_bottom = 1080.0
+focus_mode = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background Color" type="ColorRect" parent="Pause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.568627 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pause logo" type="Label" parent="Pause"]
+margin_left = 82.9648
+margin_top = 92.4447
+margin_right = 639.965
+margin_bottom = 268.445
+custom_fonts/font = SubResource( 1 )
+text = "Pause"
+
+[node name="yes" type="Button" parent="Pause"]
+margin_left = 125.584
+margin_top = 436.43
+margin_right = 595.584
+margin_bottom = 530.43
+focus_next = NodePath("../no")
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
+action_mode = 0
+button_mask = 0
+text = "Continue "
+flat = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="no" type="Button" parent="Pause"]
+margin_left = 96.1207
+margin_top = 739.414
+margin_right = 627.121
+margin_bottom = 833.414
+focus_next = NodePath("../yes")
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0.568627, 0.568627, 0.568627, 1 )
+action_mode = 0
+button_mask = 0
+text = "Quit Game"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="visibility_changed" from="Pause" to="Pause/yes" method="_on_Pause_visibility_changed"]
+[connection signal="pressed" from="Pause/yes" to="Pause" method="_on_yes_pressed"]
+[connection signal="pressed" from="Pause/no" to="Pause" method="_on_no_pressed"]
