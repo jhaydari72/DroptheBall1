@@ -32,6 +32,3 @@ func _on_Area2D_body_entered(_body):
 	return value
 
 
-func _on_Area2D_area_entered(_area):
-	value = get_tree().change_scene("res://Menu Screen/Menu Set Up .tscn")
-	return value

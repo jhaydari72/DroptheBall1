@@ -16,5 +16,5 @@ func _process(delta):
 
 func _on_Area2D_area_entered(_area):
 	set_process(false)
-	value = get_tree().change_scene("res://Levels/Level2.tscn")
+	value = get_tree().change_scene("res://Menu Screen/Menu Set Up .tscn")
 	return value
