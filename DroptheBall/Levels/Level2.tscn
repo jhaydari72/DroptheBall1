@@ -3,7 +3,7 @@
 [ext_resource path="res://Background and Walls/Black Box  (1).png" type="Texture" id=1]
 [ext_resource path="res://Background and Walls/White Background.png" type="Texture" id=2]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://BalloonPath.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Balloon/BalloonPath.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Levels/Level2.gd" type="Script" id=5]
 [ext_resource path="res://Pausemenu.tscn" type="PackedScene" id=6]
 [ext_resource path="res://.import/Background Music.wav-85c30afb3f3a1d713d43be8dc0cee7e1.sample" type="AudioStream" id=7]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Background and Walls/triangle3.png" type="Texture" id=10]
 [ext_resource path="res://Background and Walls/triangle2.png" type="Texture" id=11]
 [ext_resource path="res://Background and Walls/triangle (1).png" type="Texture" id=12]
+
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
