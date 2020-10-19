@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Back.gd" type="Script" id=1]
 [ext_resource path="res://Menu Screen/Mrs Beasley.ttf" type="DynamicFontData" id=2]
@@ -25,6 +25,14 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 60
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 60
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 45
 font_data = ExtResource( 2 )
 
 [node name="How to Play Screen" type="Control"]
@@ -57,13 +65,13 @@ align = 1
 valign = 1
 
 [node name="Movement" type="Label" parent="."]
-margin_left = 188.361
+margin_left = 188.0
 margin_top = 250.0
-margin_right = 509.361
+margin_right = 483.0
 margin_bottom = 304.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
-text = "Movements"
+text = "Movement"
 align = 1
 valign = 1
 __meta__ = {
@@ -71,13 +79,13 @@ __meta__ = {
 }
 
 [node name="Keys" type="Label" parent="."]
-margin_left = 3.65345
-margin_top = 325.0
-margin_right = 723.654
+margin_left = 240.0
+margin_top = 300.0
+margin_right = 494.0
 margin_bottom = 366.0
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
-text = "Left & Right Arrow Keys"
+text = "Arrow Keys "
 align = 1
 valign = 1
 __meta__ = {
@@ -85,23 +93,25 @@ __meta__ = {
 }
 
 [node name="Select " type="Label" parent="."]
-margin_left = 180.108
-margin_top = 500.0
-margin_right = 533.109
-margin_bottom = 554.0
+margin_left = 188.0
+margin_top = 400.0
+margin_right = 364.0
+margin_bottom = 454.0
 custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
-text = "Select/Enter"
+text = "Select"
 align = 1
 valign = 1
 
 [node name="Left Mouse Click" type="Label" parent="."]
-margin_left = 180.109
-margin_top = 575.0
-margin_right = 530.109
-margin_bottom = 616.0
+margin_left = 240.0
+margin_top = 475.0
+margin_right = 448.0
+margin_bottom = 516.0
 custom_fonts/font = SubResource( 5 )
-text = "Left Mouse Click"
+text = "Enter Key"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -124,4 +134,23 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Pause Logo" type="Label" parent="."]
+margin_left = 188.0
+margin_top = 550.0
+margin_right = 374.0
+margin_bottom = 604.0
+custom_fonts/font = SubResource( 7 )
+text = "Pause "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="P key" type="Label" parent="."]
+margin_left = 220.0
+margin_top = 625.0
+margin_right = 568.0
+margin_bottom = 666.0
+custom_fonts/font = SubResource( 8 )
+text = "Escape/P Button"
 [connection signal="pressed" from="Back" to="Back" method="_on_Back_pressed"]
