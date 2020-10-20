@@ -30,7 +30,7 @@ position = Vector2( 440.627, -2412.82 )
 [node name="Path2D" parent="." instance=ExtResource( 5 )]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Path2D/PathFollow2D/KinematicBody2D" index="0"]
-position = Vector2( -248.052, -3674.99 )
+position = Vector2( -35.9841, 273.193 )
 rotation = 0.0031941
 scale = Vector2( 1.01311, 1 )
 stream = ExtResource( 8 )
