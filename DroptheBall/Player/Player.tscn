@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Needle.png" type="Texture" id=2]
 [ext_resource path="res://Player/needle2.png" type="Texture" id=3]
 [ext_resource path="res://Player/Hitbox.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Levels/Background Music.wav" type="AudioStream" id=5]
+[ext_resource path="res://Player/Area2D.gd" type="Script" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -32,6 +33,7 @@ animation = "Idle"
 current = true
 
 [node name="Area2D" type="Area2D" parent="."]
+script = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 0.569366, 15.7811 )
@@ -46,5 +48,6 @@ position = Vector2( 0.291992, 64.5297 )
 stream = ExtResource( 5 )
 autoplay = true
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="area_entered" from="Hitbox" to="Area2D" method="_on_Hitbox_area_entered"]
 
 [editable path="Hitbox"]
