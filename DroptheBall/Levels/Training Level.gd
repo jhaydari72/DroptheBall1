@@ -7,5 +7,5 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	value = get_tree().change_scene("res://Levels/Level1.tscn")
+	value = get_tree().change_scene("res://Levels/Easy.tscn")
 	return value
