@@ -34,6 +34,6 @@ func _on_Area2D_body_entered(_body):
 
 
 
-func _on_Area2D_area_entered(area):
+func _on_Area2D_area_entered(_area):
 	velocity.y = 0
 	velocity.x = 0
