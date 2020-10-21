@@ -1,8 +1,11 @@
 extends Node2D
 
 
+var value
+
 func _ready():
 	pass 
 
 func _on_Timer_timeout():
-	get_tree().change_scene("res://Menu Screen/Menu Set Up .tscn")
+	value = get_tree().change_scene("res://Thank you screen/Thanks for playing.tscn")
+	return value

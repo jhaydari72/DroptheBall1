@@ -1,10 +1,11 @@
 extends Node2D
 
-
+var value 
 func _ready():
 	pass 
 	
 
 
 func _on_Timer_timeout():
-	get_tree().change_scene("res://Levels/Training Level.tscn")
+	value = get_tree().change_scene("res://Levels/Training Level.tscn")
+	return value
