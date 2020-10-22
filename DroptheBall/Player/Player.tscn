@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Needle.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Player/Hitbox.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Levels/Background Music.wav" type="AudioStream" id=5]
 [ext_resource path="res://Player/Area2D.gd" type="Script" id=6]
+[ext_resource path="res://Background and Walls/Backgrounf Pattern 1.png" type="Texture" id=7]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -31,6 +32,17 @@ animation = "Idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Camera2D"]
+scroll_base_scale = Vector2( 0.75, 0.75 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
+motion_mirroring = Vector2( 775, 1000 )
+
+[node name="Background Pattern test 20" type="Sprite" parent="Camera2D/ParallaxBackground/ParallaxLayer"]
+position = Vector2( 355.655, 551.052 )
+scale = Vector2( 1.07653, 1.04398 )
+texture = ExtResource( 7 )
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource( 6 )
