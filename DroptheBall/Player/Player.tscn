@@ -6,7 +6,7 @@
 [ext_resource path="res://Player/Hitbox.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Levels/Background Music.wav" type="AudioStream" id=5]
 [ext_resource path="res://Player/Area2D.gd" type="Script" id=6]
-[ext_resource path="res://Background and Walls/Backgrounf Pattern 1.png" type="Texture" id=7]
+[ext_resource path="res://Background and Walls/Background Pattern 4.png" type="Texture" id=7]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -37,7 +37,7 @@ current = true
 scroll_base_scale = Vector2( 0.75, 0.75 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
-motion_mirroring = Vector2( 775, 1000 )
+motion_mirroring = Vector2( 775, 910 )
 
 [node name="Background Pattern test 20" type="Sprite" parent="Camera2D/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 355.655, 551.052 )
