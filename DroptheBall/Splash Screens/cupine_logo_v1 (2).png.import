@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Balloon.png-3c795dd3a917a52fc64ebdd24b6a8d5b.stex"
+path="res://.import/cupine_logo_v1 (2).png-75f928aba5b8378dc3eaef2ff78bda59.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Balloon/Balloon.png"
-dest_files=[ "res://.import/Balloon.png-3c795dd3a917a52fc64ebdd24b6a8d5b.stex" ]
+source_file="res://Splash Screens/cupine_logo_v1 (2).png"
+dest_files=[ "res://.import/cupine_logo_v1 (2).png-75f928aba5b8378dc3eaef2ff78bda59.stex" ]
 
 [params]
 

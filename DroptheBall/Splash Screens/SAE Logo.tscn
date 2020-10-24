@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://SAE Logo.gd" type="Script" id=1]
+[ext_resource path="res://Splash Screens/SAE_logo_icons_WHITE.png" type="Texture" id=2]
+[ext_resource path="res://Splash Screens/Sae Button.gd" type="Script" id=3]
+
+[node name="SAE Logo" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -12.0
+margin_top = -14.0
+margin_right = 15.0
+margin_bottom = 18.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SAE_logo_icons_WHITE" type="Sprite" parent="."]
+position = Vector2( 365.309, 506.328 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 2 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="Sae Button" type="Button" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -10.0
+margin_top = -13.0
+margin_right = 16.0
+margin_bottom = 16.0
+focus_next = NodePath(".")
+action_mode = 0
+button_mask = 0
+flat = true
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="Sae Button" to="Sae Button" method="_on_Sae_Button_pressed"]

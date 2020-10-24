@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Menu Screen/Mrs Beasley.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Credit Screen/Back.gd" type="Script" id=2]
@@ -28,6 +28,10 @@ size = 32
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=7]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
 size = 30
 font_data = ExtResource( 1 )
 
@@ -134,4 +138,13 @@ text = "Jose Santa Maria - Scripter/Artist"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Toby" type="Label" parent="."]
+visible = false
+margin_left = 100.0
+margin_top = 800.0
+margin_right = 629.0
+margin_bottom = 828.0
+custom_fonts/font = SubResource( 8 )
+text = "Toby Williams - Team Logo Designer"
 [connection signal="pressed" from="Back" to="Back" method="_on_Back_pressed"]

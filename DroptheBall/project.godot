@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Freg"
-run/main_scene="res://Menu Screen/Menu Set Up .tscn"
+run/main_scene="res://Splash Screens/Godot Engine.tscn"
 config/icon="res://icon.png"
 
 [display]
