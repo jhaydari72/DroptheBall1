@@ -12,5 +12,5 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	value = get_tree().change_scene("res://Menu Screen/Menu Set Up .tscn")
+	value = get_tree().change_scene("res://Splash Screens/Cupine Logo.tscn")
 	return value
