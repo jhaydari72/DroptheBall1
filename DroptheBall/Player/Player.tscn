@@ -37,7 +37,7 @@ current = true
 scroll_base_scale = Vector2( 0.75, 0.75 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Camera2D/ParallaxBackground"]
-motion_mirroring = Vector2( 775, 910 )
+motion_mirroring = Vector2( 744, 900 )
 
 [node name="Background Pattern test 20" type="Sprite" parent="Camera2D/ParallaxBackground/ParallaxLayer"]
 position = Vector2( 355.655, 551.052 )
